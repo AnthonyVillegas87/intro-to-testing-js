@@ -31,12 +31,14 @@ describe( 'sayHello',function() {
     it('should return the string "Hello, Pat!" when executed', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-    it('should return "Hello, World!" when undefined is executed', function() {
-        expect(sayHello()).toBe("Hello, World!");
+    it('should return "Hello, World!" when passed undefined', function() {
+        expect(sayHello(undefined)).toBe("Hello, World!");
     });
-    it('should return "Hello, World!" when input === true  ', function() {
-        expect(sayHello(true)).toBe("Hello, World!")
+    it('should return "Hello, World!" when passed true ', function() {
+        expect(sayHello(true)).toBe("Hello, World!");
     })
-    it('should return ')
+    it('should return "Hello, World! when passed false"', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
 
 });
