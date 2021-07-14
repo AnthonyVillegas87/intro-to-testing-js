@@ -4,6 +4,16 @@ const helloWorld = function() {
 }
 
 
-function sayHello(input) {
-    return "Hello, " + input + "!"
+// function sayHello() {
+//         return "Hello, " + input + "!"
+//
+// }
+
+function isEven(num) {
+    return num % 2 === 0 || num % 2 < 0
+}
+
+function isFive(num) {
+        return  num === 5 || num === "5";
+
 }
